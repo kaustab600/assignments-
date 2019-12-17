@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css advance</title>
+	<style type="text/css">
+		#main{
+			width:1920px;
+			height: 1080px;
+			
+		}
+		#header{
+			background-color:grey;
+			width:100%;
+			height:108px;
+		}
+
+		#logo{
+
+			float:left;
+			padding-left:5%;
+			padding-top:1%;
+			
+		}
+
+  
+
+		nav{
+
+			float:right;
+
+
+		}
+
+		nav ul{
+			margin:0;
+			padding-right:150px;
+			padding-top: 21.6px;
+			list-style: none;
+		}
+
+		nav ul a{
+			text-decoration: none;
+		}
+
+
+		nav li{
+			display: inline;
+			margin-left: 50px;
+			font-size: 28px;
+		}
+
+		nav li:hover{
+        background-color:rgba(0, 0, 0, 1);
+      }
+
+
+
+		#banner{
+			background-color:skyblue;
+			overflow:hidden;
+			width:100%;
+			height:346px;
+
+
+		}
+
+		#larrow{
+			float: left;
+			padding-top: 170px;
+			padding-left: 5%;
+			width: 5%;
+			height: 86.5px;
+
+		}
+
+		#rarrow{
+			float:right;
+			padding-top:170px;
+			padding-right:5%;
+			width: 5%;
+			height: 86.5px;
+		}
+
+		#bannertext{
+			text-align: center;
+			font-size: 124px;
+			color: white;
+			padding-top: 50px;
+		}
+
+		#content{
+			
+			width:100%;
+			height: 518px;
+			margin-top:1%;
+		}
+
+		#leftpart{
+			float:left;
+			
+			width:45%;
+			height: 518px;
+			padding-left: 5%;
+
+
+		}
+
+		#lc1{
+			background-color:yellow;
+			
+			
+		
+			width:98%;
+			height:518px;
+
+		}
+
+		
+
+		#lc2{
+			background-color:pink;
+			position: relative;
+			bottom:95%;
+			right:4%;
+			width:50%;
+			height:80%;
+			box-shadow:4px 4px 15px #B9B9B9	;
+			
+		}
+
+		#rightpart{
+			float:left;
+			
+			width:50%;
+			height: 518px;
+
+		}
+
+		#rc1{
+
+		
+			background-color: orange;
+			width:95%;
+			height:68%;
+			margin-bottom: 2%;
+
+			
+			}
+
+
+
+		#rc2{
+			background-color: green;
+			width:95%;
+			height: 28%;
+		}
+
+		.boxes{
+			color: white;
+        padding: 6px;
+        height:45px;
+        display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 22px;
+
+        background-color: rgba(255,188,64);
+        font-size: 32px;
+
+      }
+
+      #footer{
+      	background-color: skyblue;
+      	width:100%;
+	    height:108px;
+	    margin-top:1%;
+
+      }
+
+      #flinks{
+
+      	float:none;
+      }
+
+      #flinks ul{
+
+      	    margin:0;
+      	    
+			padding-left:35%;
+			padding-top: 2%;
+			list-style: none;
+			
+      }
+
+      #flinks ul a{
+
+      	text-decoration: none;
+
+
+      }
+
+      #flinks ul a:before{
+      	content: "";
+
+      
+      	
+
+      }
+
+
+      #flinks ul a:after{
+
+      	
+      	content: "|";
+      	position: relative;
+      	left:2%;
+
+      }
+
+     
+
+      #flinks li{
+
+      	display: inline;
+      	margin-left: 50px;
+      	font-size:26px;
+
+      }
+
+
+
+	</style>
+</head>
+<body>
+<div id="main">
+	<div id="header">
+		<div id="logo">
+			<img src="./images/head_logo.jpg">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Profile</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div id="banner">
+		<img id="larrow" src="./images/icons/larrow.png" alt="left arrow">
+		
+		<img id="rarrow" src="./images/icons/rarrow.png" alt="right arrow">
+		<h1 id="bannertext">BANNER</h1>
+		
+	</div>
+	<div id="content">
+		<div id="leftpart">
+		<div id="lc1">
+		</div>
+
+		<div id="lc2">
+		</div>
+        </div>
+
+
+		
+		<div id="rightpart">
+		<div id="rc1">
+			<form name="frm1" id="frm1">
+				<input type="text" class="boxes" style="width:50%">
+				<input type="text" class="boxes" style="width:50%">
+				<select class="boxes" style="width:50%" name="city">
+					<option></option>
+					<option></option>
+				</select><br>
+				<input type="submit" class="boxes" style="width:25%" value="submit">
+			</form>
+
+		</div>
+		
+		
+		<div id="rc2">
+
+		</div>
+	</div>
+
+	</div>
+
+	<div id="footer">
+		<div id="flinks">
+			<ul>
+				<li><a href="#">Home </a></li>
+				<li><a href="#">Services </a></li>
+				<li><a href="#">Profile </a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+
+</div>
+
+
+</body>
+</html>
