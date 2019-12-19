@@ -4,7 +4,7 @@
 	<title>css advance</title>
 	<style type="text/css">
 		#main{
-			width:1920px;
+			width:100%;
 			height: 1080px;
 			
 		}
@@ -17,8 +17,10 @@
 		#logo{
 
 			float:left;
-			padding-left:5%;
-			padding-top:1%;
+			position: relative;
+			left:5%;
+			top:15%;
+			
 			
 		}
 
@@ -33,8 +35,8 @@
 
 		nav ul{
 			margin:0;
-			padding-right:150px;
-			padding-top: 21.6px;
+			padding-right: 50px;
+			padding-top: 40px;
 			list-style: none;
 		}
 
@@ -51,6 +53,7 @@
 
 		nav li:hover{
         background-color:rgba(0, 0, 0, 1);
+
       }
 
 
@@ -66,19 +69,24 @@
 
 		#larrow{
 			float: left;
-			padding-top: 170px;
-			padding-left: 5%;
+			position: relative;
+			left:5%;
+			top: 40%;
 			width: 5%;
-			height: 86.5px;
+			height: 90.5px;
+			background-color: black;
 
 		}
 
 		#rarrow{
 			float:right;
-			padding-top:170px;
-			padding-right:5%;
+			position: relative;
+			right:3%;
+			top: 40%;
 			width: 5%;
-			height: 86.5px;
+			height: 90.5px;
+			background-color: black;
+
 		}
 
 		#bannertext{
@@ -142,7 +150,7 @@
 			background-color: orange;
 			width:95%;
 			height:68%;
-			margin-bottom: 2%;
+			
 
 			
 			}
@@ -152,7 +160,11 @@
 		#rc2{
 			background-color: green;
 			width:95%;
-			height: 28%;
+			height: 30%;
+			position: relative;
+			top:2%;
+
+			
 		}
 
 		.boxes{
@@ -185,10 +197,12 @@
 
       #flinks ul{
 
-      	    margin:0;
+      	    margin:0%;
       	    
-			padding-left:35%;
-			padding-top: 2%;
+			position: relative;
+			left:35%;
+			padding-top:40px;
+			
 			list-style: none;
 			
       }
@@ -196,12 +210,17 @@
       #flinks ul a{
 
       	text-decoration: none;
+      	
+
 
 
       }
 
       #flinks ul a:before{
-      	content: "";
+      	content: " ";
+      	position: relative;
+      	left:3%;
+
 
       
       	
@@ -213,8 +232,9 @@
 
       	
       	content: "|";
-      	position: relative;
-      	left:2%;
+      	position:relative;
+     	left:0.5%;
+      
 
       }
 
@@ -225,6 +245,8 @@
       	display: inline;
       	margin-left: 50px;
       	font-size:26px;
+      	position: relative;
+      	
 
       }
 
