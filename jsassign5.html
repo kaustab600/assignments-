@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery task 5</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("#footer").click(function() {
+				$("#popup").css({"display":"block"});
+
+			});
+
+			$("#closebtn").click(function(){
+				$("#popup").css({"display":"none"});
+			});
+		});
+	</script>
+	<style type="text/css">
+		body{
+			margin-top: 0px;
+			margin-left: 0px;
+			margin-bottom: 0px;
+			margin-right: 0px;
+		}
+		#main{
+
+			
+			width:100%;
+			height: auto;
+			overflow: auto;
+		}
+
+		#header{
+			background-color: lightblue;
+			height: 100px;
+			overflow:hidden;
+			
+		}
+
+		#content{
+			
+			margin-top:0.5%;
+			
+			overflow: hidden;
+			height: 600px;
+		}
+
+		#footer{
+			overflow: hidden;
+			margin-top: 0.5%;
+			background-color:orange;
+			width: auto;
+			height: 100px; 
+			position: relative;
+			bottom: 100px;
+		}
+
+		#sidebar{
+			float:left;
+			overflow: hidden;
+			background-color:green;
+			width:29%;
+			height:500px;
+			margin-right:0.5%;
+             
+		}
+
+		#right{
+			float:left;
+		
+			width:70.5%;
+			height:500px;
+			overflow: hidden;
+
+			
+
+		}
+
+		#maincontent{
+			overflow: hidden;
+			background-color:yellow;
+			width:100%;
+			height:300px;
+			position: relative;
+			
+		
+		
+			
+		}
+
+		#extracontent{
+			overflow: hidden;
+			background-color: grey;
+			width: 100%;
+			height: 200px;
+			position: relative;
+			top:2.5%;
+		
+			
+		}
+
+		#p1{
+			position: relative;
+			left:40%;
+			top:20%;
+
+		}
+
+		#p2{
+			position: relative;
+			left:40%;
+			top:10%;
+
+		}
+
+		#p3{
+
+			position: relative;
+			left:40%;
+			top:10%;
+
+		}
+
+		#p4{
+			position: relative;
+			left:40%;
+			top:10%;
+
+		}
+
+		#p5{
+			position: relative;
+			left:40%;
+			top:20%;
+
+		}
+
+		p{
+			color: white;
+			font-size: 26px;
+		}
+
+		#popup{
+			width:100%;
+			height: 900px;
+			z-index: 1;
+			background-color: rgba(0,0,0,0.6) ;opacity:0.8;
+			position: fixed;
+			top:0px;
+			text-align: center;
+			display: none;
+		}
+
+
+		#popup h1{
+			position: relative;
+			top: 300px;
+			color: black;
+			
+
+		}
+
+		#popup #closebtn{
+			background-color: blue;
+			width:50px;
+			font-size: 36px;
+			position: relative;
+			top:-45px;
+			left: 1400px;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div id="header">
+			<div id="p1">
+					<p>Header</p>
+				</div>
+		</div>
+		<div id="content">
+			<div id="sidebar">
+				<div id="p2">
+					<p>Sidebar</p>
+				</div>
+			</div>
+			   <div id="right">
+				  <div id="maincontent">
+					<div id="p3"><p>main content</p></div>
+				  </div>
+				  <div id="extracontent">
+					<div id="p4"><p>extra content</p></div>
+				  </div>
+				</div>
+		</div>			
+			 <div id="footer">
+			    <div id="p5">
+				   <p>footer</p>
+				</div>
+			
+		     </div>
+		     <div id="popup">
+		     	<h1>click on close button to close </h1>
+		     	<div id="closebtn">X</div>
+		     </div>
+			
+
+		</div>
+	</div>
+
+</body>
+</html>

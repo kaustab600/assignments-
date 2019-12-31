@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#bar").click(function(){
+				$("#box").slideDown("slow");
+
+			});
+		});
+	</script>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+
+		#bar{
+			width:50%;
+			height: 40px;
+			background-color: grey;
+		}
+
+		#box{
+			width:50%;
+			height: 100px;
+			background-color:lightgrey;
+			display:none;
+		}
+
+
+
+		#container{
+			margin-top: 20px;
+			margin-left: 200px;
+		}
+
+		p{
+			padding-left: 250px;
+			padding-top: 10px;
+		}
+		#box p:first-of-type{
+
+			padding-left: 280px;
+			padding-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+	<div id="bar"><p>Click me to slide down</p></div>
+	<div id="box"><p>hello world</p></div>
+    </div>
+</body>
+</html>

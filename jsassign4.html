@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery task 4</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#header").click(function(){
+				$(this).css("background-color","red");
+			});
+
+			$("#sidebar").click(function(){
+				$("#sidebar #p2 p:first-of-type").css({"color":"yellow" ,"font-size":"64px"});
+			});
+
+			$("#extracontent").click(function(){
+				$("#maincontent").fadeOut("slow");
+			});
+
+
+		});
+	</script>
+	<style type="text/css">
+		body{
+			margin-top: 0px;
+			margin-left: 0px;
+			margin-bottom: 0px;
+			margin-right: 0px;
+		}
+		#main{
+
+			
+			width:100%;
+			height: auto;
+			overflow: auto;
+		}
+
+		#header{
+			background-color: lightblue;
+			height: 216px;
+			overflow:hidden;
+			
+		}
+
+		#content{
+			
+			margin-top:0.5%;
+			
+			overflow: hidden;
+			height: 864px;
+		}
+
+		#footer{
+			overflow: hidden;
+			margin-top: 0.5%;
+			background-color:orange;
+			width: auto;
+			height: 216px; 
+		}
+
+		#sidebar{
+			float:left;
+			overflow: hidden;
+			background-color:green;
+			width:29%;
+			height:864px;
+			margin-right:0.5%;
+             
+		}
+
+		#right{
+			float:left;
+		
+			width:70.5%;
+			height:864px;
+			overflow: hidden;
+
+			
+
+		}
+
+		#maincontent{
+			overflow: hidden;
+			background-color:yellow;
+			width:100%;
+			height:602.8px;
+			position: relative;
+			
+		
+		
+			
+		}
+
+		#extracontent{
+			overflow: hidden;
+			background-color: grey;
+			width: 100%;
+			height: 243.2px;
+			position: relative;
+			top:2.5%;
+		
+			
+		}
+
+		#p1{
+			position: relative;
+			left:40%;
+			top:20%;
+
+		}
+
+		#p2{
+			position: relative;
+			left:40%;
+			top:10%;
+
+		}
+
+		#p3{
+
+			position: relative;
+			left:40%;
+			top:10%;
+
+		}
+
+		#p4{
+			position: relative;
+			left:40%;
+			top:10%;
+
+		}
+
+		#p5{
+			position: relative;
+			left:40%;
+			top:20%;
+
+		}
+
+		p{
+			color: white;
+			font-size: 26px;
+		}
+
+		
+
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div id="header">
+			<div id="p1">
+					<p>Header</p>
+				</div>
+		</div>
+		<div id="content">
+			<div id="sidebar">
+				<div id="p2">
+					<p>Sidebar</p>
+				</div>
+			</div>
+			   <div id="right">
+				  <div id="maincontent">
+					<div id="p3"><p>main content</p></div>
+				  </div>
+				  <div id="extracontent">
+					<div id="p4"><p>extra content</p></div>
+				  </div>
+				</div>
+		</div>			
+			 <div id="footer">
+			    <div id="p5">
+				   <p>footer</p>
+				</div>
+			
+		     </div>
+			
+
+		</div>
+	</div>
+
+</body>
+</html>

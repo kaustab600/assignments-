@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("form").submit(function(){
+  	if($("#firstname").val() == "" || $("#lastname").val() == "")
+  	{
+  		alert("please fill all the fields")
+  	}
+  	
+  });
+});
+</script>
+</head>
+<body>
+	<form action="">
+	
+  firstname:<input type="text" id="firstname" placeholder="enter your firstname" ><br><br>
+  lastname:<input type="text" id="lastname" placeholder="enter your lastname"><br><br>
+  <input type="submit" name="submit" value="submit">
+</form> 
+
+</body>
+</html>
