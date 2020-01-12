@@ -12,11 +12,11 @@
 			$("#col1 .item1").on({
    					 mouseenter: function () {
         				//stuff to do on mouse enter
-        				$("#col1 .hoverbox").css({"display":"block"});
+        				$("#col1 #hoverboxitem1").css({"display":"block"});
     				},
     				mouseleave: function () {
         				//stuff to do on mouse leave
-        				$("#col1 .hoverbox").css({"display":"none"});
+        				$("#col1 #hoverboxitem1").css({"display":"none"});
     				}
               });
 
@@ -24,46 +24,68 @@
 			$("#col1 .item2").on({
    					 mouseenter: function () {
         				//stuff to do on mouse enter
-        				$("#col1 .hoverbox").css({"display":"block"});
+        				$("#col1 #hoverboxitem2").css({"display":"block"});
     				},
     				mouseleave: function () {
         				//stuff to do on mouse leave
-        				$("#col1 .hoverbox").css({"display":"none"});
+        				$("#col1 #hoverboxitem2").css({"display":"none"});
     				}
               });
 
 
-			$("#col1 .item3").on({
+			$("#col2 .item3").on({
    					 mouseenter: function () {
         				//stuff to do on mouse enter
-        				$("#col1 .hoverbox").css({"display":"block"});
+        				$("#col2 #hoverboxitem3").css({"display":"block"});
     				},
     				mouseleave: function () {
         				//stuff to do on mouse leave
-        				$("#col1 .hoverbox").css({"display":"none"});
+        				$("#col2 #hoverboxitem3").css({"display":"none"});
+    				}
+              });
+
+			$("#col2 .item4").on({
+   					 mouseenter: function () {
+        				//stuff to do on mouse enter
+        				$("#col2 #hoverboxitem4").css({"display":"block"});
+    				},
+    				mouseleave: function () {
+        				//stuff to do on mouse leave
+        				$("#col2 #hoverboxitem4").css({"display":"none"});
+    				}
+              });
+
+			$("#col2 .item5").on({
+   					 mouseenter: function () {
+        				//stuff to do on mouse enter
+        				$("#col2 #hoverboxitem5").css({"display":"block"});
+    				},
+    				mouseleave: function () {
+        				//stuff to do on mouse leave
+        				$("#col2 #hoverboxitem5").css({"display":"none"});
     				}
               });
 
 
-			$("#col1 .item6").on({
+			$("#col3 .item6").on({
    					 mouseenter: function () {
         				//stuff to do on mouse enter
-        				$("#col1 .hoverbox").css({"display":"block"});
+        				$("#col3 #hoverboxitem6").css({"display":"block"});
     				},
     				mouseleave: function () {
         				//stuff to do on mouse leave
-        				$("#col1 .hoverbox").css({"display":"none"});
+        				$("#col3 #hoverboxitem6").css({"display":"none"});
     				}
               });
 
-			$("#col1 .item7").on({
+			$("#col3 .item7").on({
    					 mouseenter: function () {
         				//stuff to do on mouse enter
-        				$("#col1 .hoverbox").css({"display":"block"});
+        				$("#col3 #hoverboxitem7").css({"display":"block"});
     				},
     				mouseleave: function () {
         				//stuff to do on mouse leave
-        				$("#col1 .hoverbox").css({"display":"none"});
+        				$("#col3 #hoverboxitem7").css({"display":"none"});
     				}
               });
 
@@ -117,6 +139,10 @@
 			
 				<button id="btn1">Contact Us</button>
 				<button id="btn2">Discover Now</button>
+
+				<div id="downarrow">
+					<img src="./images/icons/darrow.png">
+				</div>
 			  </div>
 		<!--</div>-->
 		</div>
@@ -205,24 +231,55 @@
 			<div id="imagegallery">
 				<div id="col1">
 				 <div class="item1"><img src="./images/12-min.jpg">
-				 	<div class="hoverbox">
+				 	<div id="hoverboxitem1">
 				 		<h4>Project Title</h4>
 				 		<h6>Code</h6>
 				    </div>
 				 </div>
-  				 <div class="item2"><img src="./images/1.jpg">
+  				 <div class="item2">
+  				 	<img src="./images/1.jpg">
+  				 	<div id="hoverboxitem2">
+				 		<h4>Project Title</h4>
+				 		<h6>Code</h6>
+				    </div>
 
   				 </div>
   				</div>
   				<div id="col2">
-  				 <div class="item3"><img src="./images/1.jpg"></div>  
-  				 <div class="item3"><img src="./images/1.jpg"></div>
-  				 <div class="item3"><img src="./images/1.jpg"></div>
+  				 <div class="item3">
+  				 	<img src="./images/1.jpg">
+  				 	<div id="hoverboxitem3">
+				 		<h4>Project Title</h4>
+				 		<h6>Code</h6>
+				    </div>
+
+  				 </div>  
+  				 <div class="item4">
+  				 	<img src="./images/1.jpg">
+  				 	<div id="hoverboxitem4">
+				 		<h4>Project Title</h4>
+				 		<h6>Code</h6>
+				    </div>
+  				 </div>
+  				 <div class="item5">
+  				 	<img src="./images/1.jpg">
+  				 	<div id="hoverboxitem5">
+				 		<h4>Project Title</h4>
+				 		<h6>Code</h6>
+				    </div>
+  				 </div>
   				</div>
   				<div id="col3">
-  				 <div class="item6"><img src="./images/1.jpg"></div>
-  				 <div class="item7"><img src="./images/12-min.jpg">
-  				 	<div class="hoverbox">
+  				 <div class="item6">
+  				 	<img src="./images/1.jpg">
+  				 	<div id="hoverboxitem6">
+				 		<h4>Project Title</h4>
+				 		<h6>Code</h6>
+				    </div>
+  				 </div>
+  				 <div class="item7">
+  				 	<img src="./images/12-min.jpg">
+  				 	<div id="hoverboxitem7">
 				 		<h4>Project Title</h4>
 				 		<h6>Code</h6>
 				    </div>
@@ -232,6 +289,217 @@
 				
 			</div>
 		</div>
+	</div>
+
+	<div id="stats">
+		<div id="statsbg">
+			<div class="container">
+			<div class="numbers">
+				<img src="./images/icons/i-team.svg">
+				<h5>Unique Customers:</h5>
+				<h2>3519+</h2>
+			</div>
+			<div class="numbers">
+				<img src="./images/icons/i-shield.svg">
+				<h5>Completed Projects:</h5>
+				<h2>3519+</h2>
+			</div>
+			<div class="numbers">
+				<img src="./images/icons/i-diamond.svg">
+				<h5>Happy Users:</h5>
+				<h2>3519+</h2>
+			</div>
+			<div class="numbers">
+				<img src="./images/icons/i-trophy.svg">
+				<h5>Honors and Awards:</h5>
+				<h2>3519+</h2>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+	<div id="pricing">
+		<div class="container">
+			<div id="headings">
+				<h1>Flexible <span id="pricingtext">Pricing</span> Plans</h1>
+				<h5>Ut enim ad minim veniam, quis nostrud.</h5>
+			</div>
+
+			<div id="plans">
+				<div class="plan">
+					<h3>Trial Version</h3>
+					<h6>Lorem ipsum dolor sit amet</h6>
+					<h6> adipiscing elit</h6>
+
+					<h3 id="freetext">free</h3>
+					<h6>500gb drive space</h6>
+					<h6>unlimited messages</h6>
+					<h6 class="planlighttext">Free email adrress</h6>
+					<h6 class="planlighttext">Friendly Support</h6>
+					<button class="planbtn">Download</button>
+				</div>
+
+				<div class="plan">
+					<h3 id="regulartext">Regular</h3>
+					<h6>Lorem ipsum dolor sit amet</h6>
+					<h6> adipiscing elit</h6>
+
+					<h3 id="feestext1">$<span class="feestext">19</span>/month</h3>
+					<h6>500gb drive space</h6>
+					<h6>unlimited messages</h6>
+					<h6>Free email adrress</h6>
+					<h6 class="planlighttext">Friendly Support</h6>
+					<button class="planbtn1">Purchase</button>
+				</div>
+
+				<div class="plan">
+					<h3 id="extendedtext">Extended</h3>
+					<h6>Lorem ipsum dolor sit amet</h6>
+					<h6> adipiscing elit</h6>
+
+					<h3 id="feestext2">$<span class="feestext">29</span>/month</h3>
+					<h6>500gb drive space</h6>
+					<h6>unlimited messages</h6>
+					<h6>Free email adrress</h6>
+					<h6>Friendly Support</h6>
+					<button class="planbtn">Purchase</button>
+				</div>
+				
+			</div>
+			
+		</div>	
+	</div>
+
+
+	<div id="testimonials">
+		<div id="testimonialsbg">
+			<div class="container">
+				<div id="headingstesti">
+					<h1><span id="testimonialstext">Testimonials</span> About Us</h1>
+					<div id="navigatortesti">
+						<div id="left">
+						<img src="./images/icons/larrow.png" >
+					    </div>
+						<div id="right">
+							<img src="./images/icons/rarrow.png" >
+						</div>
+					</div>
+					<h5>dolor in reprehenderit in voluptate velit</h5>
+					
+				</div>
+
+
+				<div id="testipeople">
+					<div class="people">
+						<img src="./images/t-1.jpeg">
+						<h4>Robert Newman</h4>
+						<h6>Microsoft Cooperation</h6>
+						<h6>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut nisi.</h6>
+						<h6>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</h6>
+						<h6>Duis aute irure dolor in voluptate velit</h6>
+					</div>
+
+					<div class="people">
+						<img src="./images/t-2.jpeg">
+						<h4>Robert Newman</h4>
+						<h6>SpaceX</h6>
+						<h6>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut nisi.</h6>
+						<h6>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</h6>
+						<h6>Duis aute irure dolor in voluptate velit</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="blogpost">
+	<div class="container">
+		<div id="headingblog">
+			<h1>Latest Blog Post</h1>
+			<h5>dolor in reprehenderit in voluptate velit</h5>
+		</div>
+
+		<div id="latestblogs">
+			<div class="blogcards">
+				<img src="./images/3.jpg">
+				<h4>deserunt mollit anim id est laborum.</h4>
+				<h3>deserunt mollit anim id est laborum.</h3>
+				<h3>Excepteur sint occaecat</h3>
+				<button id="readmorebtn">Read More</button>
+				
+			</div>
+
+			<div class="blogcards">
+				<img src="./images/3.jpg">
+				<h4>deserunt mollit anim id est laborum.</h4>
+				<h3>deserunt mollit anim id est laborum.</h3>
+				<h3>Excepteur sint occaecat</h3>
+				<button id="readmorebtn">Read More</button>
+				
+			</div>
+
+			<div class="blogcards">
+				<img src="./images/3.jpg">
+				<h4>deserunt mollit anim id est laborum.</h4>
+				<h3>deserunt mollit anim id est laborum.</h3>
+				<h3>Excepteur sint occaecat</h3>
+				<button id="readmorebtn">Read More</button>
+				
+			</div>
+			
+		</div>
+	</div>
+	</div>
+
+
+	<div id="footer">
+	<div class="container">
+		<div id="footerlogo">
+			<img src="./images/logo-footer.jpg">
+		</div>
+
+		<div id="footerlinks">
+			<div class="footerpanels">
+				<h3>Company</h3>
+				<h6>About</h6>
+				<h6>Support</h6>
+				<h6>Press</h6>
+				<h6>Legal & Privacy</h6>
+			</div>
+
+			<div class="footerpanels">
+				<h3>Quick Links</h3>
+				<h6>News</h6>
+				<h6>Contact</h6>
+				<h6>FAQ</h6>
+				
+			</div>
+
+			<div class="footerpanels">
+				<h3>Social</h3>
+				<h6>Facebook</h6>
+				<h6>Google+</h6>
+				<h6>Twitter</h6>
+				<h6>Instagram</h6>
+			</div>
+
+			<div class="footerpanels">
+				<h3>Subscribe newsletter</h3>
+				<div id="newsletter">
+				<input type="text" placeholder="email">
+				<div id="emaillogo">
+					<img src="./images/icons/i-message_w.svg">
+				</div>
+			    </div>
+			</div>	
+		</div>
+
+		<div id="copyright">
+				<h6>copyright © all right reserved</h6>
+		</div>
+	</div>
 	</div>
 
 </body>
