@@ -35,7 +35,7 @@ body{
 
 .logo img{
 	
-	height:80px;
+	height:73px;
 	}
 
 .navbar{
@@ -274,6 +274,7 @@ body{
 
 #helloworld #lf1 ul{
 	margin-top: 20px;
+	padding-top: 10px;
 }
 
 #helloworld #lf1 h1{
@@ -281,6 +282,7 @@ body{
 }
 
 #helloworld #lf1 h5{
+	margin-top: 5px;
 	padding-top: 5px;
 	font-weight: 200;
 }
@@ -377,6 +379,10 @@ body{
 	padding-right: 15px;
 	margin-right: 10px;
 	
+}
+
+.serviceoffered h2:hover{
+	color:yellow;
 }
 
 .serviceoffered img{
@@ -503,7 +509,7 @@ body{
 
 #imagegallery #col1{
 	height:inherit;
-	width:33%;
+	width:30%;
 	
 }
 
@@ -521,7 +527,11 @@ body{
 #imagegallery #col1 .item1{
 	width:290px;
 	height: 301.05px;
-	margin:20px;
+	margin-top:20px;
+	margin-left:0px;
+	margin-right:20px;
+	margin-bottom:20px;
+
 	background-color: lightblue;
 	position: relative;
 
@@ -536,7 +546,10 @@ body{
 #imagegallery #col1 .item2{
 	width:290px;
 	height: 141.11px;
-	margin:20px;
+	margin-top:20px;
+	margin-left:0px;
+	margin-right:20px;
+	margin-bottom:20px;
 	background-color: blue;
 	position: relative;
 
@@ -748,6 +761,10 @@ body{
 
 .numbers h5{
 	font-weight: 300;
+}
+
+.numbers:hover h2{
+	color:yellow;
 }
 .numbers:nth-child(3){
 	color: yellow;
@@ -1002,7 +1019,7 @@ body{
 
 #testipeople .people h4{
 	text-align: center;
-	font-weight: 200;
+	font-weight: 450;
 
 }
 
@@ -1016,7 +1033,7 @@ font-weight: 80;
 }
 
 #testipeople .people h6{
-	font-weight: 80;
+	font-weight: 250;
 }
 
 #testipeople .people h6:last-of-type{
@@ -1079,12 +1096,14 @@ font-weight: 80;
 	font-size:14px;
 	font-weight: 400;
 	color:grey;
+	padding-left: 8px;
 }
 
 #blogpost #latestblogs .blogcards h4{
 	margin-top: 20px;
 	font-weight: 350;
-	color:black;	
+	color:black;
+	padding-left: 8px;	
 }
 
 #blogpost #latestblogs .blogcards #readmorebtn{
@@ -1113,7 +1132,7 @@ font-weight: 80;
 	width:100%;
 	height: 55vh;
 	float: left;
-	background-color: rgba(0, 0, 56,0.78);
+	background-color: rgba(0, 0, 56,0.82);
 	color:white;
 }
 
@@ -1130,6 +1149,11 @@ font-weight: 80;
 	width:250px;
 }
 
+#footer #footerlinks .footerpanels:hover h3{
+	color:yellow;
+
+}
+
 #footer #footerlinks .footerpanels h3{
 	margin-top: 50px;
 	font-weight: 500;
@@ -1141,36 +1165,55 @@ font-weight: 80;
 	font-weight: 300;
 }
 
+#footer #footerlinks .footerpanels h6:hover{
+	color:yellow;
+	font-size: 12px;
+}
+
 #footer #footerlinks .footerpanels input{
-	border-radius: 25px;
+	border-radius: 12.5px 0px 0px 12.5px;
 	border-style: none;
 	padding: 6px 20px ;
 }
 
 #footer #footerlinks .footerpanels #newsletter{
-	position: relative;
+	/*position: relative;*/
+	display: flex;
+
 }
+
+#footer #footerlinks .footerpanels #newsletter button{
+	border-style: none;
+}
+
+
 
 #footer #footerlinks .footerpanels #newsletter #emaillogo{
 	background-color:#bfb832;
-	width:50px;
-	height:27.55px;
+	width:60px;
+	padding: 0px 6px;
 	border-radius: 0px 12.5px 12.5px 0px;
-	position: absolute;
+	/*position: absolute;
 	right:25px;
-	top:0px;
+	top:0px;*/
 }
 
 #footer #footerlinks .footerpanels #newsletter #emaillogo img{
 	width:20px;
-	height:15px;
-	margin-left: 10px;
-	margin-top: 5px;
+	margin-right:5px;
+	
 }
 
-#footer #copyright{
+/*#footer #copyright{
 	transform: translate(350px ,100px);
 	width:300px;
+}*/
+
+#footer #copyright{
+	float: left;
+	width:75%;
+	transform: translateY(90px);
+	margin-left: 350px;
 }
 
 #footer #copyright h6{
