@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<script>
+		function func(){
+			var str1 = document.getElementById('telno').value;
+			var prefix = "+91";
+			var len = str1.length;
+			
+			if(len == 10)
+			{
+				telno.value = prefix + str1;
+			}
+			else
+			{
+				telno.value="";
+				alert("please enter valid contactno with 10 digits");
+			}
+		}
+		
+	</script>
+</head>
+<body>
+
+	<input type="text" name="telephoneno" id="telno" onblur="func()" value="" required>
+
+</body>
+</html>
